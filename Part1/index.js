@@ -3,8 +3,8 @@ board = []
 
 
 function play(clickedId){
-    const playerSpan = document.getElementById('player')
-    const clickedId = document.getElementById(clickedId)
+    const playerSpan = document.getElementById('player');
+    const clickedElement = document.getElementById(clickedId)
 
     if (playerSpan.innerText === 'X'){
         playerSpan.innerText = 'O';
@@ -15,17 +15,17 @@ function play(clickedId){
         clickedElement.innerText = 'O';
         board[clickedId] = 'O';
     }
+     console.log(board)
 
-
-const topLeft = board [0]
-const topCenter = board [1]
-const topRight = board [2]
-const middleLeft = board [3]
-const middleCenter = board [4]
-const middleRight = board [5]
-const bottomLeft = board [6]
-const bottomCenter = board [7]
-const bottomRight = board [8]
+    const topLeft = board [0]
+    const topCenter = board [1]
+    const topRight = board [2]
+    const middleLeft = board [3]
+    const middleCenter = board [4]
+    const middleRight = board [5]
+    const bottomLeft = board [6]
+    const bottomCenter = board [7]
+    const bottomRight = board [8]
 
 
 if (topLeft !== undefined && topLeft === topCenter && topLeft === topRight) {
@@ -70,4 +70,11 @@ for (let i = 0; i <= 8; i++){
   if (boardFull === true){
     alert("Cat's game, there is no winner");
   }
-} 
+ 
+ 
+
+  
+
+}
+
+
